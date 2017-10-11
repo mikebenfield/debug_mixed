@@ -1,5 +1,6 @@
+#![feature(abi_sysv64)]
 
-extern "C" {
+extern "sysv64" {
     fn c_function();
     fn asm_function();
 }
