@@ -1,8 +1,9 @@
 .intel_syntax noprefix
 
 .text
-        .global _asm_function
+        .global _asm_function, asm_function
 
+asm_function:
 _asm_function:
         lea     rdi, [rip + message]
         sub     rsp, 8
